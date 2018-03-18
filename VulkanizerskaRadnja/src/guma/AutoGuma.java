@@ -31,6 +31,7 @@ public class AutoGuma {
 	/**
 	 * postavlja vrednost atributa markaModel na vrednost parametra. Baca izuzetak ako se prosledi null ili String duzine manje od 3
 	 * @param markaModel 
+	 * @throws RuntimeException
 	 */
 	public void setMarkaModel(String markaModel) {
 	if (markaModel==null || markaModel.length()<3)
@@ -49,6 +50,7 @@ public class AutoGuma {
 	 * postavlja vrednost atributa precnik na vrednost parametra. Baca izuzetak ako je parametar izvan opsega 
 	 * 
 	 * @param precnik
+	 *  @throws RuntimeException
 	 */
 	public void setPrecnik(int precnik) {
 	if (precnik < 13 || precnik > 22)
@@ -68,6 +70,7 @@ public class AutoGuma {
 	 * postavlja vrednost atributa sirina na vrednost parametra. Baca izuzetak ako je parametar izvan opsega
 	 * 
 	 * @param sirina
+	 *  @throws RuntimeException
 	 */
 	public void setSirina(int sirina) {
 	if (sirina < 135 || sirina > 355)
@@ -87,6 +90,7 @@ public class AutoGuma {
 	/**
 	 * postavlja vrednost atributa visina na vrednost parametra. Baca izuzetak ako je parametar izvan opsega
 	 * @param visina
+	 *  @throws RuntimeException
 	 */
 	public void setVisina(int visina) {
 	if (visina < 25 || visina > 95)

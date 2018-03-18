@@ -15,6 +15,8 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Dodaje gumu na pocetak liste
 	 * @param a guma koja se dodaje
+	 * @throws NullPointerException 
+	 * @throws RuntimeException
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
