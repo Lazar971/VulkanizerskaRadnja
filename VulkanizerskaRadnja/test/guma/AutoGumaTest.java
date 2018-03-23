@@ -86,11 +86,28 @@ public class AutoGumaTest {
 
 	@Test
 	public void testEqualsObject() {
-		AutoGuma a=ag;
+		AutoGuma a=new AutoGuma();
+		a.setMarkaModel("BMW X6");
+		a.setPrecnik(16);
+		a.setVisina(35);
+		a.setSirina(220);
+		ag.setMarkaModel("BMW X6");
+		ag.setPrecnik(16);
+		ag.setVisina(35);
+		ag.setSirina(220);
 		assertTrue(a.equals(ag));
+		
 	}
 	public void testEqualsObjectRazliciti() {
-		AutoGuma a=null;
+		AutoGuma a=new AutoGuma();
+		a.setMarkaModel("BMW X6");
+		a.setPrecnik(16);
+		a.setVisina(35);
+		a.setSirina(220);
+		ag.setMarkaModel("BMW X5");
+		ag.setPrecnik(16);
+		ag.setVisina(35);
+		ag.setSirina(220);
 		assertFalse(ag.equals(a));
 	}
 

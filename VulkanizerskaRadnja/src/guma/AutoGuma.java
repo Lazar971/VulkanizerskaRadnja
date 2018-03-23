@@ -29,9 +29,9 @@ public class AutoGuma {
 	return markaModel;
 	}
 	/**
-	 * postavlja vrednost atributa markaModel na vrednost parametra. Baca izuzetak ako se prosledi null ili String duzine manje od 3
-	 * @param markaModel 
-	 * @throws RuntimeException
+	 * postavlja vrednost atributa markaModel na vrednost parametra.
+	 * @param markaModel marka i model koji se postavljaju za AutoGumu
+	 * @throws RuntimeException ako je markaModel null ili je njegova duzina manja od 3
 	 */
 	public void setMarkaModel(String markaModel) {
 	if (markaModel==null || markaModel.length()<3)
@@ -41,16 +41,16 @@ public class AutoGuma {
 	
 	/**
 	 * getter za precnik gume
-	 * @return precnik
+	 * @return precnik AutoGume
 	 */
 	public int getPrecnik() {
 	return precnik;
 	}
 	/**
-	 * postavlja vrednost atributa precnik na vrednost parametra. Baca izuzetak ako je parametar izvan opsega 
+	 * postavlja vrednost atributa precnik na vrednost parametra.  
 	 * 
-	 * @param precnik
-	 *  @throws RuntimeException
+	 * @param precnik koji se postavlja za gumu
+	 * @throws RuntimeException ako je precnik manji od 13 ili veci od 22
 	 */
 	public void setPrecnik(int precnik) {
 	if (precnik < 13 || precnik > 22)
@@ -61,16 +61,16 @@ public class AutoGuma {
 
 	/**
 	 * getter za sirinu gume
-	 * @return sirina
+	 * @return sirina AutoGume
 	 */
 	public int getSirina() {
 	return sirina;
 	}
 	/**
-	 * postavlja vrednost atributa sirina na vrednost parametra. Baca izuzetak ako je parametar izvan opsega
+	 * postavlja vrednost atributa sirina na vrednost parametra.
 	 * 
-	 * @param sirina
-	 *  @throws RuntimeException
+	 * @param sirina koja se postavlja za gumu
+	 *  @throws RuntimeException ako je sirina manja od 135 ili veca od 355
 	 */
 	public void setSirina(int sirina) {
 	if (sirina < 135 || sirina > 355)
@@ -80,7 +80,7 @@ public class AutoGuma {
 	
 	/**
 	 * getter za visinu gume
-	 * @return visina 
+	 * @return visina AutoGume
 	 */
 	public int getVisina() {
 	return visina;
@@ -88,9 +88,9 @@ public class AutoGuma {
 	
 
 	/**
-	 * postavlja vrednost atributa visina na vrednost parametra. Baca izuzetak ako je parametar izvan opsega
-	 * @param visina
-	 *  @throws RuntimeException
+	 * postavlja vrednost atributa visina na vrednost parametra. 
+	 * @param visina koja se postavlja za gumu
+	 *  @throws RuntimeException ako je visina manja od 25 ili veca od 95
 	 */
 	public void setVisina(int visina) {
 	if (visina < 25 || visina > 95)
@@ -112,7 +112,7 @@ public class AutoGuma {
 	
 	/**
 	 * Redefinisana metoda equals iz klase Object. Uporedjuje dva objekta iz klase AutoGuma po svim parametrima.
-	 * @return <i>true</i> ako su svi atributi identicni, a <i>false</i> u suprotnom.
+	 * @return <i>true</i> ako su svi atributi identicni,  <i>false</i> u suprotnom.
 	 */
 	@Override
 	public boolean equals(Object obj) {

@@ -1,4 +1,4 @@
-package radnja;
+package guma.radnja;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import guma.AutoGuma;
+import guma.radnja.VulkanizerskaRadnja;
 
 public class VulkanizerskaRadnjaTest {
 	VulkanizerskaRadnja vr;

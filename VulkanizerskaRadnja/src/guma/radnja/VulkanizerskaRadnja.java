@@ -1,4 +1,4 @@
-package radnja;
+package guma.radnja;
 
 import java.util.LinkedList;
 import guma.AutoGuma;
@@ -9,14 +9,14 @@ import guma.AutoGuma;
  */
 public class VulkanizerskaRadnja {
 	/**
-	 * Lista guma koja se nalaze u radnji
+	 * Lista guma koje se nalaze u radnji
 	 */
 	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
 	/**
 	 * Dodaje gumu na pocetak liste
 	 * @param a guma koja se dodaje
-	 * @throws NullPointerException 
-	 * @throws RuntimeException
+	 * @throws NullPointerException ako je <b>a</b> null
+	 * @throws RuntimeException ako lista <b>gume</b> sadrzi <b>a</b>
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
